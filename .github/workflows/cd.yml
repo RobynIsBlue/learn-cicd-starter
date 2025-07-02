@@ -36,6 +36,7 @@ jobs:
 
     - name: Configure Docker to use gcloud as a credential helper
       run: gcloud auth configure-docker us-central1-docker.pkg.dev
+      #wo
 
     - name: Build Docker image
       run:  gcloud builds submit --tag us-central1-docker.pkg.dev/metal-apricot-464719-k9/notely-ar-repo/abluerobyn/notely .
