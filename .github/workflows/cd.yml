@@ -39,4 +39,4 @@ jobs:
       #wo
 
     - name: Build Docker image
-      run:  gcloud builds submit --tag us-central1-docker.pkg.dev/metal-apricot-464719-k9/notely-ar-repo/abluerobyn/notely .
+      run:  gcloud builds submit --tag us-central1-docker.pkg.dev/metal-apricot-464719-k9/notely-ar-repo/abluerobyn/notely --file C:\codingsh\github.com\RobynIsBlue\learn-cicd-starter\Dockerfile .
