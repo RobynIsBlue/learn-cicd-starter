@@ -42,9 +42,8 @@ jobs:
     - name: 'Use gcloud CLI'
       run: 'gcloud info'
 
-    # - name: Configure Docker to use gcloud as a credential helper
-    #   run: gcloud auth configure-docker us-central1-docker.pkg.dev
-      #wo
+    - name: Deploy to Cloud Run
+      run: gcloud run deploy notely --image us-central1-docker.pkg.dev/metal-apricot-464719-k9/notely-ar-repo/abluerobyn/notely
 
     - name: Build Docker image
       run:  gcloud builds submit --tag us-central1-docker.pkg.dev/metal-apricot-464719-k9/notely-ar-repo/abluerobyn/notely .
