@@ -75,5 +75,5 @@ func (cfg *apiConfig) handlerUsersGet(w http.ResponseWriter, r *http.Request, us
 		return
 	}
 
-	respondWithJSON(w, http.StatusOK, userResp)
+	respondWithJSON(w, 201, userResp)
 }
