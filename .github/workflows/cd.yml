@@ -38,7 +38,7 @@ jobs:
       run: go install github.com/pressly/goose/v3/cmd/goose@latest
 
     - name: Migration
-      run: .scripts/migrateup.sh
+      run: scripts/migrateup.sh
 
     - id: 'auth'
       uses: 'google-github-actions/auth@v2'
